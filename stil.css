@@ -1,0 +1,105 @@
+/* GENEL AYARLAR */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER TOP BAR (SİYAH) */
+.header-top {
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header-contact-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.header-contact-link:hover {
+    color: #20c997;
+}
+
+/* SOSYAL MEDYA */
+.social-media-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.social-media-link:hover {
+    color: #20c997;
+}
+
+/* ANA HEADER NAVBAR */
+.header-main {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.logo-img {
+    height: 55px;
+}
+.site-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* NAVBAR LİNKLERİ */
+.navbar-nav .nav-link {
+    color: #333 !important;
+    font-weight: 700;
+    padding: 15px 20px !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.navbar-nav .nav-link:hover {
+    color: #20c997 !important;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #20c997;
+    transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after {
+    width: 50%;
+}
+
+/* DROPDOWN MENÜ */
+.navbar-nav .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+}
+.navbar-nav .dropdown-item {
+    color: #333;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+.navbar-nav .dropdown-item:hover {
+    background-color: #20c997;
+    color: #fff;
+}
+
+/* ŞEHİTLERİMİZ MENÜSÜNE VURGU */
+.highlight-dropdown {
+    font-weight: bold;
+    color: #20c997 !important;
+}
+.highlight-dropdown i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+.nav-item.dropdown:hover .highlight-dropdown i {
+    transform: rotate(180deg);
+}

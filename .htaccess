@@ -1,0 +1,5 @@
+<FilesMatch "\.php$">
+    <If "%{THE_REQUEST} =~ m#\s/+detay/#">
+        Require all denied
+    </If>
+</FilesMatch>
